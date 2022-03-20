@@ -78,18 +78,25 @@ Sharpe Ratios measure performance that is adjusted by risk, and a higher value i
 
 ## Custom Portolio
 
-The first logical step would be to find the maximum and minimum dates that were used in the alldata data frame, then select stocks that had data available for those date ranges. \
-I selected bigger stocks that I knew there would be data for; Amazon, Ebay, and Nvidia.
+Before selecting stocks to create a custom portfolio, the first logical step was to calculate the date range in the alldata data frame. This was done by finding the maximum and minimum dates, and its purpose is to ensure that only stocks with data available during the specified time period are considered.
 
-After computing the weighted returns, I converted the series to a data frame to allow it to merge with the alldata Data frame I made earlier. 
+The stocks chosen for the custom portofolio are as follows:
+
+* Ebay
+* Amazon
+* Nvidia
+
+These stocks are well-established, and contain a wealth of data.
+
+After calculating the weighted returns, this data was merged with the the alldata dataframe to create the completeport (complete portfolio) dataframe, which was used for subsequent analyses.
 
 The standard deviation of the weighted returns fluctuated quite a bit, peaking in January of each year. 
 
 <img width="527" alt="Screen Shot 2022-03-20 at 4 00 15 PM" src="https://user-images.githubusercontent.com/99091066/159183722-1dd6ee08-3060-4122-a2a9-bce4414a97f8.png">
 
-I then computed the correlation of all portfolios; Whale, Algo, S&P, as well as my custom portfolio and visualized this using a heatmap. 
+The correlation of all portfolios was calculated, and visualized this using a heatmap. 
 
-My custom portfolio was least correlated with Algo 1 and most correlated with Soros Fund Management. Compared to the S&P, the custom portfolio has a correlation of 0.45. 
+The custom portfolio was least correlated with Algo 1, and most correlated with Soros Fund Management. Compared to the S&P, the custom portfolio has a correlation of 0.45. 
 
 
 <img width="516" alt="Screen Shot 2022-03-20 at 4 07 53 PM" src="https://user-images.githubusercontent.com/99091066/159183963-8d70af7d-2df2-4f25-bfb0-728dac651890.png">
@@ -109,7 +116,7 @@ Below are the sharpe ratios for all portfolios
 
 <img width="316" alt="Screen Shot 2022-03-20 at 4 14 53 PM" src="https://user-images.githubusercontent.com/99091066/159184200-135de143-ed26-4444-8a07-056837fe5f04.png">
 
-The custom portfolio has a high sharpe ratio, second to Algo 1. Paulson & CO and Tiger Global management both had negative values. Compared to the S&P, All portfolios except the negatives, outperformed.
+The custom portfolio has a high sharpe ratio, second to Algo 1. Paulson & CO and Tiger Global management both had negative values. Compared to the S&P, all portfolios except the negatives, outperformed.
 
 
 
