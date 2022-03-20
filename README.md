@@ -32,7 +32,9 @@ The box plot below, shows the returns for each portfolio. Assesing it visually, 
 
 Through the box plot, standard deviation, and annualized standard deviation calculations it is evident that Berkshire is the riskiest portfolio, and significantly more risky than the S&P. 
 
+Below is the correlation matrix for all of the portfolios compared to the S&P. The portfolio most correlated with the S&P is Algo 2, their standard deviations are similar as well. The portfolio that is least correlated with is Algo 1. Berkshire falls somewhere in between. To mitigate risk, it is important to select stocks that have a lower correlation with each other in order to diversify the portfolio. 
 
+<img width="513" alt="Screen Shot 2022-03-19 at 11 26 07 PM" src="https://user-images.githubusercontent.com/99091066/159146725-9770f242-b5d7-484d-b7b1-3b6c7f31bb4b.png">
 
 
 
