@@ -36,8 +36,17 @@ Below is the correlation matrix for all of the portfolios compared to the S&P. T
 
 <img width="513" alt="Screen Shot 2022-03-19 at 11 26 07 PM" src="https://user-images.githubusercontent.com/99091066/159146725-9770f242-b5d7-484d-b7b1-3b6c7f31bb4b.png">
 
+The Beta of the sample and is around 0.75. This was calculated by taking the covariance of Soros Fund Management and the S&P, divided by the variance of the S&P. The higher the beta, the more riskier the portoflio is. Generally, a beta more than 1 is considered risky. 
+<img width="236" alt="Screen Shot 2022-03-19 at 11 53 59 PM" src="https://user-images.githubusercontent.com/99091066/159147391-d3b07155-10ed-496b-b94c-ea0046e41d0b.png">
+
+Overtime, the Beta or risk has fluctuated. The two were riskiest in 2018-07, in around 2019-03. 
+
+<img width="643" alt="Screen Shot 2022-03-19 at 11 59 52 PM" src="https://user-images.githubusercontent.com/99091066/159147511-48cd24fb-fb66-4e6a-b0a0-f91a77452004.png">
+
+Sharpe Ratios measures performance that is adjusted by risk. The higher the sharpe ratio, the better. Through calculating the ratios, it is clear that Algo 1 has the highest value while Paulson has the lowest. Most portfolios are outperforming the S&P. Based on the graph, Paulson is expected to have negative returns. Algorithmic strategies outperformed all Whale portfolios, as well as the S&P.
+
+<img width="443" alt="Screen Shot 2022-03-20 at 12 48 21 AM" src="https://user-images.githubusercontent.com/99091066/159148670-6ad0e781-dc33-4278-a6a7-21ec42778b1b.png">
 
 
-
-
+## Creating Custom Portolio
 
