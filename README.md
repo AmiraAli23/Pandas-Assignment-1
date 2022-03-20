@@ -36,7 +36,8 @@ Below is the correlation matrix for all of the portfolios compared to the S&P. T
 
 <img width="513" alt="Screen Shot 2022-03-19 at 11 26 07 PM" src="https://user-images.githubusercontent.com/99091066/159146725-9770f242-b5d7-484d-b7b1-3b6c7f31bb4b.png">
 
-The Beta of the sample and is around 0.75. This was calculated by taking the covariance of Soros Fund Management and the S&P, divided by the variance of the S&P. The higher the beta, the more riskier the portoflio is. Generally, a beta more than 1 is considered risky. 
+The Beta of the sample and is around 0.75. This was calculated by taking the covariance of Soros Fund Management and the S&P, divided by the variance of the S&P. The higher the beta, the more riskier the portoflio is. Generally, a beta more than 1 is considered risky.
+
 <img width="236" alt="Screen Shot 2022-03-19 at 11 53 59 PM" src="https://user-images.githubusercontent.com/99091066/159147391-d3b07155-10ed-496b-b94c-ea0046e41d0b.png">
 
 Overtime, the Beta or risk has fluctuated. The two were riskiest in 2018-07, in around 2019-03. 
@@ -49,4 +50,40 @@ Sharpe Ratios measures performance that is adjusted by risk. The higher the shar
 
 
 ## Creating Custom Portolio
+
+The first logical step would be to find the maximum and minimum dates that were used in the alldata data frame, then select stocks that had data available for those date ranges. \
+I selected bigger stocks that I knew there would be data for; Amazon, Ebay, and Nvidia.
+
+After computing the weighted returns, I converted the series to a data frame to allow it to merge with the alldata Data frame I made earlier. 
+
+The standard deviation of the weighted returns fluctuated quite a bit, peaking in January of each year. 
+
+<img width="527" alt="Screen Shot 2022-03-20 at 4 00 15 PM" src="https://user-images.githubusercontent.com/99091066/159183722-1dd6ee08-3060-4122-a2a9-bce4414a97f8.png">
+
+I then computed the correlation of all portfolios; Whale, Algo, S&P, as well as my custom portfolio and visualized this using a heatmap. 
+
+My custom portfolio was least correlated with Algo 1 and most correlated with Soros Fund Management. Compared to the S&P, the custom portfolio has a correlation of 0.45. 
+
+
+<img width="516" alt="Screen Shot 2022-03-20 at 4 07 53 PM" src="https://user-images.githubusercontent.com/99091066/159183963-8d70af7d-2df2-4f25-bfb0-728dac651890.png">
+
+The Beta of the new portfolio is a lot higher than the previous portfolio (0.74994 compared to the new beta of 1.0316). It is clear that adding the custom portfolio generally made the combined portfolio a lot riskier. 
+
+
+<img width="294" alt="Screen Shot 2022-03-20 at 4 09 59 PM" src="https://user-images.githubusercontent.com/99091066/159184024-48291b62-6abd-4235-b32d-6ad4629b41c5.png">
+
+
+Comparing the S&P with the custom portfolio, the Beta values seem to be a higher than before. It appears to be generally consistent, with very high peaks in 2018-05.
+
+<img width="533" alt="Screen Shot 2022-03-20 at 4 13 57 PM" src="https://user-images.githubusercontent.com/99091066/159184166-f2852c37-1b52-40da-b698-6a20a2bed48b.png">
+
+
+Below are the sharpe ratios for all portfolios
+
+<img width="316" alt="Screen Shot 2022-03-20 at 4 14 53 PM" src="https://user-images.githubusercontent.com/99091066/159184200-135de143-ed26-4444-8a07-056837fe5f04.png">
+
+The custom portfolio has a high sharpe ratio, second to Algo 1. Paulson & CO and Tiger Global management both had negative values. Compared to the S&P, All portfolios except the negatives, outperformed.
+
+
+
 
